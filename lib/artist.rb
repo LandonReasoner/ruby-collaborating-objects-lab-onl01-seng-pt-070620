@@ -34,10 +34,9 @@ class Artist
       found_artist 
     else 
 	    Artist.new(name)
+    end
   end
-end
-    
-    self.all.detect{|artist| artist.name = artist} || Artist.new(name)
+  
   
   def print_songs
     @songs.each do |song|
